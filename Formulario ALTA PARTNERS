@@ -1,0 +1,224 @@
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ALTA DE SOCIOS/PARTERS RECORD.com.mx</title>
+    <!-- For Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.2.slim.js" integrity="sha256-OflJKW8Z8amEUuCaflBZJ4GOg4+JnNh9JdVfoV+6biw=" crossorigin="anonymous"></script>
+   
+ <style>
+ 
+   .input-group-text{
+      width: 220px;
+     
+   }
+   
+ </style>
+    
+    <!-- Add Column  -->
+
+<script>
+ 
+ function BtnAdd()
+ {
+     var v = $("#TRow").clone().appendTo("#TBody");
+     $(v).find("input").val('');
+     $(v).removeClass("d-none");
+   
+ }
+    function BtnDel(v)
+ {
+     $(v).parent().parent().remove();
+   
+ }
+
+</script>    
+            
+</head>
+  <body>
+    
+
+    <div class="container">
+      
+      <form method="POST" action="https://script.google.com/macros/s/AKfycby220emHTNBLGL491jKSwR4sZzDuLPFKMFw0F1BAycULrkBziCMV_SlxAh0b8f4d_KV/exec">
+      
+        <div class="card">
+            <div class="card-header text-center">
+              <h4>FORMATO DE ALTA DE SOCIOS / PROGRAMMATIC</h4>
+            </div>
+            <div class="card-body">
+            <div class="contanier">
+            <div class="row row-no-gutters">
+
+            <div class="col-sm-6">
+            <b><p>Información del socio</p></b>
+            </div>
+            <div class="col-sm-6">
+            <b><p>Información de los contactos</p></b>
+      
+   </div>
+  </div>
+</div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Empresa</span>
+                            <input type="text" class="form-control" placeholder="NOMBRE DE LA EMPRESA" name="emp_nm" >
+                        </div>
+            
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Razón Social</span>
+                            <input type="text" class="form-control" placeholder="RAZÓN SOCIAL"  name="raz_soc">
+                        </div>
+            
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >País</span>
+                            <input type="text" class="form-control" placeholder="PAÍS" name="pais_nm" >
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Ciudad</span>
+                            <input type="text" class="form-control" placeholder="CIUDAD"  name="cd_nm">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Dirección 1</span>
+                            <input type="text" class="form-control" placeholder="DIRECCIÓN 1"  name="dir_1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Dirección 2</span>
+                            <input type="text" class="form-control" placeholder="DIRECCIÓN 2"  name="dir_2">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Cádigo Postal</span>
+                            <input type="text" class="form-control" placeholder="C.P."  name="cp_nm">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                      
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Contacto Comercial</span>
+                            <input type="text" class="form-control" placeholder="CONTACTO COMERCIAL" name="con_com" >
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Email</span>
+                            <input type="text" class="form-control" placeholder="EMAIL"  name="mail_con_com">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Teléfono</span>
+                            <input type="text" class="form-control" placeholder="TELEFONO"  name="tel_con_com">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Contacto para facturación</span>
+                            <input type="text" class="form-control" placeholder="CONTACTO FACTURACIÓN"  name="con_fact">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Email</span>
+                            <input type="text" class="form-control" placeholder="EMAIL"  name="mail_con_fact">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Teléfono</span>
+                            <input type="text" class="form-control" placeholder="TELEFONO"  name="tel_con_fact">
+                        </div>  
+                    </div>
+                </div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-13" style="background-color:lavender;">
+      <b><p>Información de campaña</p></b>
+    </div>
+  </div>
+  <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Campaña</span>
+                            <input type="text" class="form-control" placeholder="NOMBRE DE CAMPAÑA"  name="nom_camp">
+                        </div>
+            
+                
+            
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >ODC</span>
+                            <input type="text" class="form-control" placeholder="ODC" name="odc_id_nm">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Divisa</span>
+                            <input type="text" class="form-control" placeholder="DIVISA" name="div_id">
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="col-6">
+                      
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Fecha de inicio</span>
+                            <input type="date" class="form-control" placeholder="FECHA DE INICIO"  name="date_in">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" >Fecha de finalización</span>
+                            <input type="date" class="form-control" placeholder="FECHA FINALIZACIÓN"  name="date_out">
+                        </div>
+                      <div class="input-group mb-3">
+                            <span class="input-group-text" >Cantidad de formatos</span>
+                            <input type="number" class="form-control" placeholder="CANTIDAD DE FORMATOS" name="no_form">
+                        </div>
+                    </div>
+                </div>
+</div>
+<table class="table table-bordered">
+                    <thead class="table-success">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Nombre de formato</th>
+                        <th scope="col" class="text-end">Tipo de formato</th>
+                        <th scope="col" class="text-end">Tamaño</th>
+                        <th scope="col" class="text-end">Tipo de línea</th>
+                        <th scope="col" class="text-end">Segmentación</th>
+                        <th scope="col" class="text-end">TAG o Código</th>
+                        
+                        <th scope="col" class="NoPrint">                         
+                            <button type="button" class="btn btn-sm btn-success" onclick="BtnAdd()">+</button>
+                        </th>
+
+                      </tr>
+                    </thead>
+                    <tbody id="TBody">
+                      <tr id="TRow" class="d-none">
+                        <th scope="row">1</th>
+                        <td><input type="text" class="form-control" ></td>
+                        <td><input type="text" class="form-control text-end" name="Tipo De formato"  ></td>
+                        <td><input type="text" class="form-control text-end" name="Tamaño" ></td>
+                        <td><input type="text" class="form-control text-end" name="Tipo de línea"  ></td>
+                        <td><input type="text" class="form-control text-end" name="Segmentación"  ></td>
+                        <td><input type="text" class="form-control text-end" name="TAG o Código"  ></td>
+                        <td class="NoPrint"><button type="button" class="btn btn-sm btn-danger" onclick="BtnDel(this)">X</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <div class="row">
+                    <div class="col-8">
+                      
+                        <button type="submit" class="btn btn-primary" >Enviar</button>  
+
+                    </div>
+                    <div class="col-4">
+                        
+
+                    </div>
+                </div>
+             </div>
+          </div>
+        </form>
+    </div>
+
+
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
